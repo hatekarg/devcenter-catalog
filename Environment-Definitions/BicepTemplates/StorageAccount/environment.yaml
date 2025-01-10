@@ -1,1 +1,19 @@
-
+name: StorageAccount
+summary: This is a deployment of a Azure Storage Account using Bicep.
+description: Deploys a Storage Account
+templatePath: main.bicep
+parameters:
+- id: "storageAccountName "
+  name: "Storage account name"
+  description: "Storage account name"
+  type: "string"
+- id: "location"
+  name: "location"
+  description: "Location to deploy the environment resources. If not specified, will deploy to the region of the project"
+  type: "string"
+  default: "westus2"
+  allowed:
+    - "eastus2"
+    - "westus2"
+    - "southeastasia"
+runner: Bicep
