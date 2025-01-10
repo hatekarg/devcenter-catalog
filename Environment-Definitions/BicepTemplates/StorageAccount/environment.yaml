@@ -4,7 +4,7 @@ description: Deploys a Storage Account
 templatePath: main.bicep
 parameters:
 - id: "storageAccountName "
-  name: "Storage account name"
+  name: "storageAccountName"
   description: "Storage account name"
   type: "string"
 - id: "location"
